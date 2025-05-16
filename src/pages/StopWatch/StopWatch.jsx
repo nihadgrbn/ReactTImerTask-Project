@@ -2,7 +2,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import style from './StopWatch.module.css';
 import { useState, useEffect, useRef } from 'react';
 import { setTime } from '../../redux/slices/stopWatchSlice';
-
 const StopWatch = () => {
 	const time = useSelector((state) => state.stopWatch.time);
 	const [intervalId, setIntervalId] = useState(null);
